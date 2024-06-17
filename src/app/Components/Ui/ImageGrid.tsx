@@ -44,7 +44,7 @@ const ImageGrid = () => {
           />
         </div>
       </div>{" "}
-      <div className="grid grid-cols-1  gap-2 w-full h-[30%] overflow-hidden">
+      <div className="grid grid-cols-1 gap-2 w-full h-[50%] overflow-hidden">
         <div className="relative">
           <Image
             src={ChloeRoom}

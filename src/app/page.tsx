@@ -4,6 +4,9 @@ import GifGrid from "@/Components/GifGrid";
 import NarrativeBlock from "@/Components/NarrativeBlock";
 import Videos from "@/Components/Videos";
 import Galeria from "./Components/Galeria";
+import GifThree from "./Components/GifThree";
+import Footer from "./Components/Footer";
+import Comparação from "./Components/Comparação";
 
 export default function Home() {
   return (
@@ -13,6 +16,9 @@ export default function Home() {
       <NarrativeBlock />
       <Videos />
       <Galeria />
+      <Comparação />
+      <GifThree />
+      <Footer />
     </main>
   );
 }
