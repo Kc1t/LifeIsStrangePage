@@ -1,5 +1,8 @@
+"use client";
+
 // Modules
 import Image from "next/image";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 // Components
 import Nav from "./Ui/Nav";
@@ -28,7 +31,12 @@ const Header = () => {
               alt="Life is Strange Logo"
             />
             <div className="flex gap-4 flex-col justify-center items-center">
-              <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden border border-white bg-transparent font-bold">
+              <Link
+                to="Trailers"
+                smooth={true}
+                duration={500}
+                className="group relative inline-flex h-12 items-center justify-center overflow-hidden border border-white bg-transparent font-bold cursor-pointer"
+              >
                 <div className="inline-flex h-12 translate-y-0 items-center justify-center px-8 text-sm md:text-base text-white transition duration-500 group-hover:-translate-y-[150%]">
                   ASSISTIR TRAILER
                 </div>
@@ -38,8 +46,13 @@ const Header = () => {
                     ASSISTIR TRAILER
                   </span>
                 </div>
-              </button>
-              <button className="group relative inline-flex h-12 w-full items-center justify-center overflow-hidden rounded-md bg-white px-8 font-bold text-black duration-1000">
+              </Link>
+              <Link
+                to="Franquia"
+                smooth={true}
+                duration={500}
+                className="group relative inline-flex h-12 w-full items-center justify-center overflow-hidden rounded-md bg-white px-8 font-bold text-black duration-1000 cursor-pointer"
+              >
                 <div className="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0 text-sm md:text-base">
                   PRÉ VENDA
                 </div>
@@ -60,9 +73,11 @@ const Header = () => {
                     ></path>
                   </svg>
                 </div>
-              </button>
+              </Link>
             </div>
-            <div className="hidden lg:flex items-center justify-center flex-col">
+            <Link     to="Narrativa"
+          smooth={true}
+          duration={500} className="hidden lg:flex items-center justify-center flex-col">
               <span className="text-white Chilanka font-bold cursor-pointer">
                 EXPLORAR
               </span>
@@ -80,7 +95,7 @@ const Header = () => {
                   stroke-linejoin="round"
                 />
               </svg>
-            </div>
+            </Link>
           </div>
           <p className="absolute w-[20%] text-white right-[10%] font-medium text-sm 2xl:text-lg hidden lg:block">
             {/* Experiecie dois jogos premiados <br />

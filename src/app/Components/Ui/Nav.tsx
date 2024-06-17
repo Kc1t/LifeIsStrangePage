@@ -4,6 +4,7 @@
 import Image from "next/image";
 import React from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
+
 // Assets
 import Logo from "@/Assets/images/Icons/SquareEnixLogo.png";
 
