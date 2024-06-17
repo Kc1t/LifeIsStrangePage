@@ -1,15 +1,18 @@
 // Modules
 import Image from "next/image";
 
+// Components
+import Nav from "./Ui/Nav";
+
 // Assets
 import Background from "@/Assets/images/Background/HeaderBackground.jpg";
 import Cover from "@/Assets/images/Background/Cover.png";
 import LifeLogo from "@/Assets/images/Icons/LifeCollection.png";
-import Nav from "./Ui/Nav";
+import Camera from "@/Assets/images/Icons/Camera.png";
 
 const Header = () => {
   return (
-    <div className="h-[60vh] lg:h-screen w-screen flex items-center flex-col justify-center Inter relative px-4">
+    <div className="h-screen lg:h-screen w-screen flex items-center flex-col justify-center Inter relative px-4">
       <div className="z-[3] h-full w-full flex items-center justify-between flex-col">
         <Nav />
         <div className="w-full flex relative justify-center items-center pb-12">
@@ -21,7 +24,7 @@ const Header = () => {
           <div className="w-full flex flex-col items-center justify-center gap-8 Chilanka">
             <Image
               src={LifeLogo}
-              className="w-[20rem] md:w-[25rem]"
+              className="w-[15rem] sm:w-[10rem] md:w-[11rem] lg:w-[18rem] 2xl:w-[25rem]"
               alt="Life is Strange Logo"
             />
             <div className="flex gap-4 flex-col justify-center items-center">
@@ -31,7 +34,9 @@ const Header = () => {
                 </div>
                 <div className="absolute inline-flex h-12 w-full translate-y-[100%] items-center justify-center text-[black] transition duration-500 group-hover:translate-y-0">
                   <span className="absolute h-full w-full translate-y-full skew-y-6 scale-y-0 bg-[#fff] transition duration-500 group-hover:translate-y-0 group-hover:scale-150"></span>
-                  <span className="z-10 font-bold text-sm md:text-base">ASSISTIR TRAILER</span>
+                  <span className="z-10 font-bold text-sm md:text-sm">
+                    ASSISTIR TRAILER
+                  </span>
                 </div>
               </button>
               <button className="group relative inline-flex h-12 w-full items-center justify-center overflow-hidden rounded-md bg-white px-8 font-bold text-black duration-1000">
@@ -57,7 +62,7 @@ const Header = () => {
                 </div>
               </button>
             </div>
-            <div className="flex items-center justify-center flex-col">
+            <div className="hidden lg:flex items-center justify-center flex-col">
               <span className="text-white Chilanka font-bold cursor-pointer">
                 EXPLORAR
               </span>
@@ -87,6 +92,7 @@ const Header = () => {
           </p>
         </div>
       </div>
+      <img src="https://lfieisstrange-6164253ge-kc1t.vercel.app/Assets/img/comp/camera.gif" className="w-[20rem] h-[20rem] absolute left-[80%] top-[65%] z-[1] hidden 2xl:block" alt="Camera" />
       <Image
         src={Cover}
         className="absolute inset-0 object-cover w-full h-full z-[1] select-none opacity-100 lg:opacity-30"
@@ -96,6 +102,7 @@ const Header = () => {
         src={Background}
         className="absolute inset-0 object-cover w-full h-full z-[0] select-none"
         alt="Background"
+        loading="eager"
       />
     </div>
   );

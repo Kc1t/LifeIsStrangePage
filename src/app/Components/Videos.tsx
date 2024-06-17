@@ -1,10 +1,15 @@
 import React from "react";
-import VideosSwiper from "./Ui/Swiper";
+import VideosSlider from "./Ui/Swiper";
 
 const Videos = () => {
   return (
-    <div className="w-full lg:flex items-start h-screen px-4 hidden">
-      <VideosSwiper />
+    <div className="w-full lg:flex flex-col items-center px-4 hidden">
+      <div className="w-[90%]">
+        <span className="font-black Inter text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-[0.1em] text-left">
+          TRAILERS
+        </span>
+      </div>
+      <VideosSlider />
     </div>
   );
 };
