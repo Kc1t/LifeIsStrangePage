@@ -8,7 +8,7 @@ import Nav from "./Ui/Nav";
 import Background from "@/Assets/images/Background/HeaderBackground.jpg";
 import Cover from "@/Assets/images/Background/Cover.png";
 import LifeLogo from "@/Assets/images/Icons/LifeCollection.png";
-import Camera from "@/Assets/images/Icons/Camera.png";
+import OnlyMax from "@/Assets/images/Background/OnlyMax.png";
 
 const Header = () => {
   return (
@@ -92,7 +92,11 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <img src="https://lfieisstrange-6164253ge-kc1t.vercel.app/Assets/img/comp/camera.gif" className="w-[20rem] h-[20rem] absolute left-[80%] top-[65%] z-[1] hidden 2xl:block" alt="Camera" />
+      <img
+        src="https://lfieisstrange-6164253ge-kc1t.vercel.app/Assets/img/comp/camera.gif"
+        className="w-[20rem] h-[20rem] absolute left-[80%] top-[65%] z-[1] hidden 2xl:block"
+        alt="Camera"
+      />
       <Image
         src={Cover}
         className="absolute inset-0 object-cover w-full h-full z-[1] select-none opacity-100 lg:opacity-30"
@@ -100,7 +104,13 @@ const Header = () => {
       />
       <Image
         src={Background}
-        className="absolute inset-0 object-cover w-full h-full z-[0] select-none"
+        className="hidden lg:block absolute inset-0 object-cover w-full h-full z-[0] select-none"
+        alt="Background"
+        loading="eager"
+      />
+      <Image
+        src={OnlyMax}
+        className="block lg:hidden absolute inset-0 object-cover w-full h-full z-[0] select-none"
         alt="Background"
         loading="eager"
       />

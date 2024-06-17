@@ -7,6 +7,8 @@ import Galeria from "./Components/Galeria";
 import GifThree from "./Components/GifThree";
 import Footer from "./Components/Footer";
 import Comparação from "./Components/Comparação";
+import Soundtrack from "./Components/Soundtrack";
+import Franchise from "./Components/Franchise";
 
 export default function Home() {
   return (
@@ -18,6 +20,8 @@ export default function Home() {
       <Galeria />
       <Comparação />
       <GifThree />
+      <Soundtrack />
+      <Franchise />
       <Footer />
     </main>
   );

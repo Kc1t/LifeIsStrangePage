@@ -1,5 +1,5 @@
 import React from "react";
-import VideosSlider from "./Ui/Swiper";
+import VideosSlider from "./Ui/VideoSlider";
 
 const Videos = () => {
   return (

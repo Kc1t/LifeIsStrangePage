@@ -2,7 +2,7 @@ import React from "react";
 
 const GifThree = () => {
   return (
-    <div className="w-full h-[120vh] flex flex-col gap-2">
+    <div className="w-full h-[80vh] lg:h-[120vh] flex flex-col gap-2">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[40%, 60%] gap-2 w-full h-[45%]">
         <div className="relative">
           <img
@@ -19,7 +19,7 @@ const GifThree = () => {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 gap-2 w-full h-[60%] overflow-hidden">
+      <div className="grid grid-cols-1 gap-2 w-full h-[30%] lg:h-[60%] overflow-hidden">
         <div className="relative">
           <img
             src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/780f24143347459.62a5fe57c5f64.gif"
