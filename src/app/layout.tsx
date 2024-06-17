@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <title>Life is Strange</title>
+        <title>Life is Strange.</title>
         <meta name="title" content="Life is Strange" />
         <meta name="description" content="Landing Page desenvolvida por fã!" />
         <meta name="keywords" content="" />

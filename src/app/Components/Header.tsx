@@ -9,34 +9,33 @@ import Nav from "./Ui/Nav";
 
 const Header = () => {
   return (
-    <div className="h-screen w-screen flex items-center flex-col justify-center Inter">
+    <div className="h-[60vh] lg:h-screen w-screen flex items-center flex-col justify-center Inter relative px-4">
       <div className="z-[3] h-full w-full flex items-center justify-between flex-col">
         <Nav />
-        <div className="w-full flex justify-between items-center pb-12">
-          {/* <div>
-            <p className="w-[100%]">
-              Desenvolver Prêmio de Excelência da Indústria 2015 Prêmio Joystick
-              de Ouro 2015 Prêmios da Academia Britânica de Jogos 2016
-            </p>
-          </div> */}
+        <div className="w-full flex relative justify-center items-center pb-12">
+          <p className="absolute w-[20%] text-white left-[10%] font-medium text-sm 2xl:text-lg hidden lg:block">
+            Develop Industry Excellence Award 2015 <br />
+            Golden Joystick Award 2015 <br />
+            The British Academy Games Award 2016
+          </p>
           <div className="w-full flex flex-col items-center justify-center gap-8 Chilanka">
             <Image
               src={LifeLogo}
-              className="w-[25rem]"
+              className="w-[20rem] md:w-[25rem]"
               alt="Life is Strange Logo"
             />
             <div className="flex gap-4 flex-col justify-center items-center">
               <button className="group relative inline-flex h-12 items-center justify-center overflow-hidden border border-white bg-transparent font-bold">
-                <div className="inline-flex h-12 translate-y-0 items-center justify-center px-8 text-white transition duration-500 group-hover:-translate-y-[150%]">
-                  VER TRAILER
+                <div className="inline-flex h-12 translate-y-0 items-center justify-center px-8 text-sm md:text-base text-white transition duration-500 group-hover:-translate-y-[150%]">
+                  ASSISTIR TRAILER
                 </div>
                 <div className="absolute inline-flex h-12 w-full translate-y-[100%] items-center justify-center text-[black] transition duration-500 group-hover:translate-y-0">
                   <span className="absolute h-full w-full translate-y-full skew-y-6 scale-y-0 bg-[#fff] transition duration-500 group-hover:translate-y-0 group-hover:scale-150"></span>
-                  <span className="z-10 font-bold">COMEÇAR</span>
+                  <span className="z-10 font-bold text-sm md:text-base">ASSISTIR TRAILER</span>
                 </div>
               </button>
               <button className="group relative inline-flex h-12 w-full items-center justify-center overflow-hidden rounded-md bg-white px-8 font-bold text-black duration-1000">
-                <div className="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0">
+                <div className="translate-y-0 opacity-100 transition group-hover:-translate-y-[150%] group-hover:opacity-0 text-sm md:text-base">
                   PRÉ VENDA
                 </div>
                 <div className="absolute translate-y-[150%] opacity-0 transition group-hover:translate-y-0 group-hover:opacity-100">
@@ -59,10 +58,12 @@ const Header = () => {
               </button>
             </div>
             <div className="flex items-center justify-center flex-col">
-              <span className="text-white Chilanka font-bold">EXPLORAR</span>
+              <span className="text-white Chilanka font-bold cursor-pointer">
+                EXPLORAR
+              </span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-12 animate-bounc"
+                className="h-12 animate-bounc cursor-pointer"
                 viewBox="0 0 24 24"
                 fill="none"
               >
@@ -76,41 +77,19 @@ const Header = () => {
               </svg>
             </div>
           </div>
-          {/* <div>
-            <p  className="w-[100%]">
-              Experimente dois premiados. Life is Strange jogos como nunca
-              antes! Visuais e animações remasterizados dão nova vida ao grande
-              elenco de personagens e histórias emocionantes.
-            </p>
-          </div> */}
+          <p className="absolute w-[20%] text-white right-[10%] font-medium text-sm 2xl:text-lg hidden lg:block">
+            {/* Experiecie dois jogos premiados <br />
+            Como se fosse a primeira vez!
+            <br /> */}
+            <br />
+            Visuais e animações remasterizados dão nova vida ao grande elenco de
+            personagens e histórias emocionantes.
+          </p>
         </div>
       </div>
-      {/* <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="1920"
-        height="1072"
-        viewBox="0 0 1920 1072"
-        className="absolute inset-0 object-cover w-screen h-full z-[1] select-none"
-        fill="none"
-      >
-        <rect width="1920" height="1072" fill="url(#paint0_linear_354_650)" />
-        <defs>
-          <linearGradient
-            id="paint0_linear_354_650"
-            x1="981.455"
-            y1="1072"
-            x2="960.312"
-            y2="-0.00344555"
-            gradientUnits="userSpaceOnUse"
-          >
-            <stop offset="0.0106533" stop-opacity="0.35" />
-            <stop offset="1" stop-opacity="0.15" />
-          </linearGradient>
-        </defs>
-      </svg> */}
       <Image
         src={Cover}
-        className="absolute inset-0 object-cover w-full h-full z-[1] select-none"
+        className="absolute inset-0 object-cover w-full h-full z-[1] select-none opacity-100 lg:opacity-30"
         alt="CoverGradient"
       />
       <Image
