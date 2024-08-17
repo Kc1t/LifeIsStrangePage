@@ -15,7 +15,7 @@ import OnlyMax from "@/Assets/images/Background/OnlyMax.png";
 
 const Header = () => {
   return (
-    <div className="h-screen lg:h-screen w-screen flex items-center flex-col justify-center Inter relative px-4">
+    <div className="h-screen w-screen tv:max-w-6xl tv:max-h-[30vh] flex items-center flex-col justify-center Inter relative px-4">
       <div className="z-[3] h-full w-full flex items-center justify-between flex-col">
         <Nav />
         <div className="w-full flex relative justify-center items-center pb-12">
@@ -75,9 +75,12 @@ const Header = () => {
                 </div>
               </Link>
             </div>
-            <Link     to="Narrativa"
-          smooth={true}
-          duration={500} className="hidden lg:flex items-center justify-center flex-col">
+            <Link
+              to="Narrativa"
+              smooth={true}
+              duration={500}
+              className="hidden lg:flex items-center justify-center flex-col"
+            >
               <span className="text-white Chilanka font-bold cursor-pointer">
                 EXPLORAR
               </span>
@@ -109,7 +112,7 @@ const Header = () => {
       </div>
       <img
         src="https://lfieisstrange-6164253ge-kc1t.vercel.app/Assets/img/comp/camera.gif"
-        className="w-[20rem] h-[20rem] absolute left-[80%] top-[65%] z-[1] hidden 2xl:block"
+        className="w-[20rem] h-[20rem] absolute left-[80%] tv:left-[70%] top-[65%] tv:top-[60%] z-[1] hidden 2xl:block"
         alt="Camera"
       />
       <Image

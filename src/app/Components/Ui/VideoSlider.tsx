@@ -16,7 +16,7 @@ export default function VideoSlider() {
       <Swiper
         watchSlidesProgress={true}
         slidesPerView={2}
-        className="mySwiper flex gap-2 w-[90%]"
+        className="mySwiper flex gap-2 w-[90%] tv:max-w-6xl tv:max-h-[30vh]"
       >
         <SwiperSlide className="">
           <div className="h-[10rem] lg:h-[30rem] w-full relative">

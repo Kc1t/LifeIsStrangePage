@@ -2,7 +2,7 @@ import React from "react";
 
 const GifThree = () => {
   return (
-    <div className="w-full h-[80vh] lg:h-[120vh] flex flex-col gap-2">
+    <div className="w-full h-[80vh] lg:h-[120vh] tv:max-w-6xl tv:max-h-[30vh] flex flex-col gap-2">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[40%, 60%] gap-2 w-full h-[45%]">
         <div className="relative">
           <img

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const GifGrid = () => {
   return (
-    <div className="w-full h-screen flex flex-col gap-2">
+    <div className="w-full h-screen flex flex-col gap-2 tv:max-w-6xl tv:max-h-[30vh]">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[37.5%,25%,37.5%] gap-2 w-full h-[45%]">
         <div className="relative">
           <img

@@ -11,7 +11,7 @@ import ChloeRoom from "@/Assets/images/Gallery/ChloeRoom.png";
 
 const ImageGrid = () => {
   return (
-    <div className="w-full lg:w-[90%] h-full flex flex-col gap-2 items-center relative overflow-hidden">
+    <div className="w-full lg:w-[90%] tv:max-w-6xl tv:max-h-[30vh] h-full flex flex-col gap-2 items-center relative overflow-hidden">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-[50%,50%] gap-2 w-full h-[35%] overflow-hidden">
         <div className="relative">
           <Image

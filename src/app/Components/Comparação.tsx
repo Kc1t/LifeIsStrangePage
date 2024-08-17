@@ -7,7 +7,7 @@ import ComparisonPoster from "@/Assets/images/Posters/Comparison.png";
 const Comparação = () => {
   return (
     <div
-      className="w-full lg:flex flex-col items-center lg:h-[125vh] gap-6 px-4 py-8 overflow-hidden"
+      className="w-full lg:flex flex-col items-center tv:items-start lg:h-[125vh] tv:max-w-6xl tv:max-h-[30vh] gap-6 px-4 py-8 overflow-hidden"
       id="Comparação"
     >
       <div className="w-full lg:w-[90%]">
@@ -15,7 +15,7 @@ const Comparação = () => {
           COMPARAÇÃO
         </span>
       </div>
-      <div className="w-full lg:w-[90%] h-[30vh] lg:h-[90%] relative">
+      <div className="w-full lg:w-[90%] h-[30vh] lg:h-[90%] tv:w-full relative">
         <video
           src="https://kc1t.github.io/LifeIsStrangePage/assets/videos/ComparisonVideo.mp4"
           className="absolute inset-0 object-cover w-full h-full z-[0] select-none cursor-pointer"

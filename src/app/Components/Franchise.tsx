@@ -9,8 +9,8 @@ import CaptainSpirit from "@/Assets/images/Posters/CaptainSpirit.png";
 
 const Franchise = () => {
   return (
-    <div className="w-full lg:flex flex-col gap-4 items-center px-4 py-8 overflow-hidden" id="Franquia">
-      <div className="w-full lg:w-[90%] flex items-end justify-end">
+    <div className="w-full lg:flex flex-col gap-4 items-center px-4 py-8 overflow-hidden tv:max-w-6xl tv:max-h-[30vh]" id="Franquia">
+      <div className="w-full lg:w-[90%] flex items-end justify-end tv:items-center tv:justify-center">
         <span className="font-black Inter text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-[0.1em] text-left">
           FRANQUIA
         </span>

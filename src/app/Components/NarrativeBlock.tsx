@@ -7,7 +7,7 @@ import TrainLine from "@/Assets/images/Background/Chloe&MaxInTrain.png";
 
 const NarrativeBlock = () => {
   return (
-    <div className="w-full lg:w-[90%] px-4 flex gap-2 lg:gap-12 flex-col items-center xl:justify-between xl:flex-row overflow-hidden" id="Narrativa">
+    <div className="w-full lg:w-[90%] tv:max-w-6xl tv:max-h-[30vh] px-4 flex gap-2 lg:gap-12 flex-col items-center xl:justify-between xl:flex-row overflow-hidden" id="Narrativa">
       <div className="w-full xl:w-1/2 flex items-center justify-center ">
         <div className="relative w-full h-[15rem] lg:h-[25rem] xl:h-[45rem]">
           <Image
@@ -19,7 +19,7 @@ const NarrativeBlock = () => {
       </div>
       <div className="w-full xl:w-1/2 flex flex-col gap-4 items-center">
         <div className="flex flex-col gap-4 w-full">
-          <span className="font-black Inter text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl tracking-[0.1em] text-left">
+          <span className="font-black Inter text-4xl lg:text-6xl xl:text-7xl 2xl:text-8xl tv:text-6xl tracking-[0.1em] text-left">
             NARRATIVA
           </span>
           <div className="flex flex-col gap-4 items-start justify-center Chilanka text-left text-xl lg:text-2xl w-full md:w-[90%]">
