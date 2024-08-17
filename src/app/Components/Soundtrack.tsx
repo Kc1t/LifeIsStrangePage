@@ -9,7 +9,7 @@ import Tracks from "./Ui/Tracks";
 const Soundtrack = () => {
   return (
     <div className="w-full lg:flex flex-col items-center justify-center gap-6 px-4 overflow-hidden" id="Soundtrack">
-      <div className="w-full lg:w-[90%] h-[30vh] lg:h-[80vh] tv:max-w-6xl tv:max-h-[30vh] relative flex items-end justify-end px-2 md:px-12 py-4">
+      <div className="w-full lg:w-[90%] h-[30vh] lg:h-[80vh] tv:max-w-6xl tv:max-h-[60vh] relative flex items-end justify-end px-2 md:px-12 py-4">
         <Image
           src={MaxInGuitar}
           className="absolute inset-0 object-cover w-full h-full z-[0] select-none cursor-pointer"

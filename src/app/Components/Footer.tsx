@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="bg-[#111111]/0 h-screen md:h-[60vh] 2xl:h-[40vh] tv:max-w-6xl tv:max-h-[15vh] w-full flex items-center flex-col gap-4 justify-center px-8 flex-wrap">
+    <div className="bg-[#111111]/0 h-screen md:h-[60vh] 2xl:h-[40vh] tv:max-w-6xl w-full flex items-center flex-col gap-4 justify-center px-8 flex-wrap">
       <p className="Chilanka text-[#111111] text-center w-full lg:w-[70%] flex-wrap text-sm lg:text-base font-semibold">
         LIFE IS STRANGE © 2015, 2021 Square Enix Limited. LIFE IS STRANGE:
         BEFORE THE STORM © 2017, 2021 Square Enix Limited. LIFE IS STRANGE, LIFE

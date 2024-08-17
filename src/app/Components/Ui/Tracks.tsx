@@ -2,7 +2,7 @@ import React from "react";
 
 const Tracks = () => {
   return (
-    <div className="w-[90%] tv:max-w-6xl tv:max-h-[30vh] flex gap-4 flex-col items-center justify-center">
+    <div className="w-[90%] tv:max-w-6xl flex gap-4 flex-col items-center justify-center">
       <iframe
         width="100%"
         scrolling="no"
